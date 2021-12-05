@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/mipt/log/log.cpp
+log.h
+/home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/mipt/log/log.h
+
+/home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/mipt/log/log.h
+iostream
+-
+

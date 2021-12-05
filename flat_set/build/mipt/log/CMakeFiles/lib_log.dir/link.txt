@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblib_log.a  CMakeFiles/lib_log.dir/log.cpp.o
+/usr/bin/ranlib liblib_log.a
