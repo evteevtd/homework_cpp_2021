@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblib_set.a  
+/usr/bin/ranlib liblib_set.a
