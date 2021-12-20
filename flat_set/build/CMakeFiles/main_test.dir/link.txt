@@ -1,0 +1,1 @@
+/usr/bin/c++  --coverage   CMakeFiles/main_test.dir/cmake/Gtests.cpp.o  -o main_test  /usr/local/lib/libgtest.a /usr/local/lib/libgtest_main.a /usr/local/lib/libgmock.a /usr/local/lib/libgmock_main.a mipt/set/liblib_set.a mipt/journal/liblib_journal.a mipt/log/liblib_log.a /usr/local/lib/libgmock.a /usr/local/lib/libgtest.a -lpthread 
