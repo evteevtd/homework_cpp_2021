@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set
+CMAKE_SOURCE_DIR = /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build
+CMAKE_BINARY_DIR = /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build/CMakeFiles /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build/mipt/log/CMakeFiles/progress.marks
-	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build && $(MAKE) -f CMakeFiles/Makefile2 mipt/log/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build/CMakeFiles 0
+	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build/CMakeFiles /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build/mipt/log/CMakeFiles/progress.marks
+	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build && $(MAKE) -f CMakeFiles/Makefile2 mipt/log/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build && $(MAKE) -f CMakeFiles/Makefile2 mipt/log/clean
+	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build && $(MAKE) -f CMakeFiles/Makefile2 mipt/log/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build && $(MAKE) -f CMakeFiles/Makefile2 mipt/log/preinstall
+	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build && $(MAKE) -f CMakeFiles/Makefile2 mipt/log/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build && $(MAKE) -f CMakeFiles/Makefile2 mipt/log/preinstall
+	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build && $(MAKE) -f CMakeFiles/Makefile2 mipt/log/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 mipt/log/CMakeFiles/lib_log.dir/rule:
-	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build && $(MAKE) -f CMakeFiles/Makefile2 mipt/log/CMakeFiles/lib_log.dir/rule
+	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build && $(MAKE) -f CMakeFiles/Makefile2 mipt/log/CMakeFiles/lib_log.dir/rule
 .PHONY : mipt/log/CMakeFiles/lib_log.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ lib_log: mipt/log/CMakeFiles/lib_log.dir/rule
 
 # fast build rule for target.
 lib_log/fast:
-	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build && $(MAKE) -f mipt/log/CMakeFiles/lib_log.dir/build.make mipt/log/CMakeFiles/lib_log.dir/build
+	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build && $(MAKE) -f mipt/log/CMakeFiles/lib_log.dir/build.make mipt/log/CMakeFiles/lib_log.dir/build
 .PHONY : lib_log/fast
 
 log.o: log.cpp.o
@@ -131,7 +131,7 @@ log.o: log.cpp.o
 
 # target to build an object file
 log.cpp.o:
-	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build && $(MAKE) -f mipt/log/CMakeFiles/lib_log.dir/build.make mipt/log/CMakeFiles/lib_log.dir/log.cpp.o
+	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build && $(MAKE) -f mipt/log/CMakeFiles/lib_log.dir/build.make mipt/log/CMakeFiles/lib_log.dir/log.cpp.o
 .PHONY : log.cpp.o
 
 log.i: log.cpp.i
@@ -140,7 +140,7 @@ log.i: log.cpp.i
 
 # target to preprocess a source file
 log.cpp.i:
-	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build && $(MAKE) -f mipt/log/CMakeFiles/lib_log.dir/build.make mipt/log/CMakeFiles/lib_log.dir/log.cpp.i
+	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build && $(MAKE) -f mipt/log/CMakeFiles/lib_log.dir/build.make mipt/log/CMakeFiles/lib_log.dir/log.cpp.i
 .PHONY : log.cpp.i
 
 log.s: log.cpp.s
@@ -149,7 +149,7 @@ log.s: log.cpp.s
 
 # target to generate assembly for a file
 log.cpp.s:
-	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build && $(MAKE) -f mipt/log/CMakeFiles/lib_log.dir/build.make mipt/log/CMakeFiles/lib_log.dir/log.cpp.s
+	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build && $(MAKE) -f mipt/log/CMakeFiles/lib_log.dir/build.make mipt/log/CMakeFiles/lib_log.dir/log.cpp.s
 .PHONY : log.cpp.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

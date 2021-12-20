@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build/mipt/log/CMakeFiles/lib_log.dir/DependInfo.cmake"
+  "/home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build/mipt/log/CMakeFiles/lib_log.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

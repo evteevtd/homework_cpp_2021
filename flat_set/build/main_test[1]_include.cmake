@@ -1,0 +1,5 @@
+if(EXISTS "/home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build/main_test[1]_tests.cmake")
+  include("/home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build/main_test[1]_tests.cmake")
+else()
+  add_test(main_test_NOT_BUILT main_test_NOT_BUILT)
+endif()

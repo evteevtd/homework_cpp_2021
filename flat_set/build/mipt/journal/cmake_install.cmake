@@ -1,4 +1,4 @@
-# Install script for directory: /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/mipt/journal
+# Install script for directory: /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/mipt/journal
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

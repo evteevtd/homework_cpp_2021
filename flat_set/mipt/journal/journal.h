@@ -14,7 +14,7 @@ namespace mipt {
 namespace fs = std::filesystem;
 
 enum OptimizeLevel {
-    NONE,
+    NONE,   
     STRONG
 };
 
@@ -40,7 +40,7 @@ public:
     void LoadState() {
         UpdateEpoch();
         size_t offset_actions = 0;
-        if (epoch_ != 0) {
+        if (last_snapshot_ != 0) {
             INFO() << "Read snapshot version: " << last_snapshot_ - 1 << std::endl;
 
             std::ifstream snapshot_in(path_ / std::to_string(last_snapshot_ - 1));
@@ -69,7 +69,9 @@ public:
             JournalEntry entry;
             while (log_in.read((char*)&entry, sizeof(entry))) {
                 entries.push_back(entry);
-                entries_ptr.push_back(&entries.back());
+            }
+            for (size_t i = 0; i < entries.size(); ++i) {
+                entries_ptr.push_back(&entries[i]);
             }
 
             structure_->ApplyBatch(entries_ptr);
@@ -82,6 +84,7 @@ public:
 
     void Write(JournalEntry entry) {
         log_.write((char*)&entry, sizeof(entry));
+        log_.flush();
         epoch_++;
 
         if (epoch_ % snapshot_frequency_ == 0) {
@@ -90,6 +93,7 @@ public:
 
             size_t offset_actions = log_.tellp();;
             out.write((char*)&offset_actions, sizeof(offset_actions));
+            out.flush();
             structure_->Write(out);
         }
     }

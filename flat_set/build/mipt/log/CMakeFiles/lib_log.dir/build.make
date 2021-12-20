@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set
+CMAKE_SOURCE_DIR = /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build
+CMAKE_BINARY_DIR = /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build
 
 # Include any dependencies generated for this target.
 include mipt/log/CMakeFiles/lib_log.dir/depend.make
@@ -59,16 +59,16 @@ include mipt/log/CMakeFiles/lib_log.dir/flags.make
 
 mipt/log/CMakeFiles/lib_log.dir/log.cpp.o: mipt/log/CMakeFiles/lib_log.dir/flags.make
 mipt/log/CMakeFiles/lib_log.dir/log.cpp.o: ../mipt/log/log.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object mipt/log/CMakeFiles/lib_log.dir/log.cpp.o"
-	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build/mipt/log && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lib_log.dir/log.cpp.o -c /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/mipt/log/log.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object mipt/log/CMakeFiles/lib_log.dir/log.cpp.o"
+	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build/mipt/log && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lib_log.dir/log.cpp.o -c /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/mipt/log/log.cpp
 
 mipt/log/CMakeFiles/lib_log.dir/log.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lib_log.dir/log.cpp.i"
-	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build/mipt/log && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/mipt/log/log.cpp > CMakeFiles/lib_log.dir/log.cpp.i
+	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build/mipt/log && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/mipt/log/log.cpp > CMakeFiles/lib_log.dir/log.cpp.i
 
 mipt/log/CMakeFiles/lib_log.dir/log.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lib_log.dir/log.cpp.s"
-	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build/mipt/log && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/mipt/log/log.cpp -o CMakeFiles/lib_log.dir/log.cpp.s
+	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build/mipt/log && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/mipt/log/log.cpp -o CMakeFiles/lib_log.dir/log.cpp.s
 
 # Object files for target lib_log
 lib_log_OBJECTS = \
@@ -80,9 +80,9 @@ lib_log_EXTERNAL_OBJECTS =
 mipt/log/liblib_log.a: mipt/log/CMakeFiles/lib_log.dir/log.cpp.o
 mipt/log/liblib_log.a: mipt/log/CMakeFiles/lib_log.dir/build.make
 mipt/log/liblib_log.a: mipt/log/CMakeFiles/lib_log.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library liblib_log.a"
-	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build/mipt/log && $(CMAKE_COMMAND) -P CMakeFiles/lib_log.dir/cmake_clean_target.cmake
-	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build/mipt/log && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lib_log.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library liblib_log.a"
+	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build/mipt/log && $(CMAKE_COMMAND) -P CMakeFiles/lib_log.dir/cmake_clean_target.cmake
+	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build/mipt/log && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lib_log.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 mipt/log/CMakeFiles/lib_log.dir/build: mipt/log/liblib_log.a
@@ -90,10 +90,10 @@ mipt/log/CMakeFiles/lib_log.dir/build: mipt/log/liblib_log.a
 .PHONY : mipt/log/CMakeFiles/lib_log.dir/build
 
 mipt/log/CMakeFiles/lib_log.dir/clean:
-	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build/mipt/log && $(CMAKE_COMMAND) -P CMakeFiles/lib_log.dir/cmake_clean.cmake
+	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build/mipt/log && $(CMAKE_COMMAND) -P CMakeFiles/lib_log.dir/cmake_clean.cmake
 .PHONY : mipt/log/CMakeFiles/lib_log.dir/clean
 
 mipt/log/CMakeFiles/lib_log.dir/depend:
-	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/mipt/log /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build/mipt/log /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build/mipt/log/CMakeFiles/lib_log.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/mipt/log /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build/mipt/log /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build/mipt/log/CMakeFiles/lib_log.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : mipt/log/CMakeFiles/lib_log.dir/depend
 

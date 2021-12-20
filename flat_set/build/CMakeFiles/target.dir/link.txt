@@ -1,1 +1,1 @@
-/usr/bin/c++  -Wall -Wextra -Wno-unused-result -Wno-sign-compare -Werror -O2 -std=c++17 -g -Og   CMakeFiles/target.dir/main.cpp.o  -o target  mipt/set/liblib_set.a mipt/journal/liblib_journal.a mipt/log/liblib_log.a 
+/usr/bin/c++  --coverage   CMakeFiles/target.dir/main.cpp.o  -o target  mipt/set/liblib_set.a mipt/journal/liblib_journal.a mipt/log/liblib_log.a 

@@ -48,24 +48,13 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set
+CMAKE_SOURCE_DIR = /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build
+CMAKE_BINARY_DIR = /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -78,11 +67,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build/CMakeFiles /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build/CMakeFiles /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/flat_set_debug/cplusplus-advance-sem/hws/flat_set/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tikhon/Documents/programs/21_22/MIPT_c++/tasks/homework_repository/homework_cpp_2021/flat_set/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -109,6 +109,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named main_test
+
+# Build rule for target.
+main_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main_test
+.PHONY : main_test
+
+# fast build rule for target.
+main_test/fast:
+	$(MAKE) -f CMakeFiles/main_test.dir/build.make CMakeFiles/main_test.dir/build
+.PHONY : main_test/fast
 
 #=============================================================================
 # Target rules for targets named target
@@ -162,6 +175,33 @@ lib_set/fast:
 	$(MAKE) -f mipt/set/CMakeFiles/lib_set.dir/build.make mipt/set/CMakeFiles/lib_set.dir/build
 .PHONY : lib_set/fast
 
+cmake/Gtests.o: cmake/Gtests.cpp.o
+
+.PHONY : cmake/Gtests.o
+
+# target to build an object file
+cmake/Gtests.cpp.o:
+	$(MAKE) -f CMakeFiles/main_test.dir/build.make CMakeFiles/main_test.dir/cmake/Gtests.cpp.o
+.PHONY : cmake/Gtests.cpp.o
+
+cmake/Gtests.i: cmake/Gtests.cpp.i
+
+.PHONY : cmake/Gtests.i
+
+# target to preprocess a source file
+cmake/Gtests.cpp.i:
+	$(MAKE) -f CMakeFiles/main_test.dir/build.make CMakeFiles/main_test.dir/cmake/Gtests.cpp.i
+.PHONY : cmake/Gtests.cpp.i
+
+cmake/Gtests.s: cmake/Gtests.cpp.s
+
+.PHONY : cmake/Gtests.s
+
+# target to generate assembly for a file
+cmake/Gtests.cpp.s:
+	$(MAKE) -f CMakeFiles/main_test.dir/build.make CMakeFiles/main_test.dir/cmake/Gtests.cpp.s
+.PHONY : cmake/Gtests.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -195,12 +235,16 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... main_test"
 	@echo "... target"
 	@echo "... lib_log"
 	@echo "... lib_journal"
 	@echo "... lib_set"
+	@echo "... cmake/Gtests.o"
+	@echo "... cmake/Gtests.i"
+	@echo "... cmake/Gtests.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -1,2 +1,0 @@
-/usr/bin/ar qc liblib_journal.a  
-/usr/bin/ranlib liblib_journal.a

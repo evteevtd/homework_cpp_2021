@@ -54,17 +54,17 @@ public:
         }
     }
 
-    bool insert(const T& value) {
+    bool insert(const T& value, bool already_in_journal = false) {
         if (exists(value)) {
             return false;
         }
+        keys_.push_back(value);
+        std::sort(keys_.begin(), keys_.end());
 
-        if (journal_) {
+        if (journal_ && !already_in_journal) {
             journal_->Write(LogEntry<T>{LogEvent::INSERT_KEY, value});
         }
-        keys_.push_back(value);
-
-        std::sort(keys_.begin(), keys_.end());
+        
         return true;
     }
 
@@ -77,16 +77,17 @@ public:
         return *found == value;
     }
 
-    bool erase(const T& value) {
+    bool erase(const T& value, bool already_in_journal = false) {
         auto found = std::lower_bound(keys_.begin(), keys_.end(), value);
-        if (found == keys_.end()) {
+        if (found == keys_.end() || *found != value) {
             return false;
         }
+        keys_.erase(found);
 
-        if (journal_) {
+        if (journal_ && !already_in_journal) {
             journal_->Write(LogEntry<T>{LogEvent::ERASE_KEY, value});
         }
-        keys_.erase(found);
+        
         return true;
     }
     
@@ -100,6 +101,7 @@ public:
 
 private:
     void Write(std::ostream& out) const {
+        std::cerr << " lol i am here\n";
         size_t size = keys_.size();
         out.write((char*)&size, sizeof(size));
         out.write((char*)keys_.data(), size * sizeof(T));
@@ -118,10 +120,10 @@ private:
         bool status = 0;
         switch (entry->event) {
         case LogEvent::INSERT_KEY:
-            status = insert(entry->key);
+            status = insert(entry->key, true);
             break;
         case LogEvent::ERASE_KEY:
-            status = erase(entry->key);
+            status = erase(entry->key, true);
             break;
         }
 
@@ -130,16 +132,24 @@ private:
     }
 
     void ApplyBatch(std::vector<LogEntry<T>*>& entries) {
-        auto buffer_set = FlatSet<T>();
+        auto for_insert = FlatSet<T>();
+        auto for_erase = FlatSet<T>();
 
         for (auto* entry : entries) {
-            if (!Apply(entry)) {
-                entry->applied = false;
+            if (entry->event == LogEvent::INSERT_KEY) {
+                for_insert.insert(entry->key);
+                for_erase.erase(entry->key);
+            } else {
+                for_insert.erase(entry->key);
+                for_erase.insert(entry->key);
             }
         }
 
-        for (const auto& key : buffer_set.keys_) {
-            insert(key);
+        for (const auto& key : for_erase.keys_) {
+            erase(key, true);
+        }
+        for (const auto& key : for_insert.keys_) {
+            insert(key, true);
         }
     }
 
